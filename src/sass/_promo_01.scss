@@ -1,8 +1,14 @@
 .b-first-promo{
 	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 150px;
+	background: transparent url('../ico/ico_01.png') center bottom no-repeat;
+	margin-bottom: 60px;
 	.l-text{
 		display: inline-block;
-		width: 35%;
+		margin-top: -30px;
+		margin-bottom: 42px;
+		width: 40%;
 		color: $white; 
 		font-size: 18px;
 		line-height: 24px;
@@ -10,11 +16,18 @@
 	.l-btn{
 		display: inline-block;
 		color: $white;
-		padding: 4px 20px;
+		padding: 7px 24px;
 		border: 1px dashed $bronze;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-size: 14px;
 		line-height: 36px;
+		letter-spacing: 1px;
+		@include transition(border-color .25s);
+		background: transparent url('../ico/ico_03.png') center bottom no-repeat;
+		&:hover,
+		&:focus{
+			border-color: $yellow;
+		}
 	}
 }

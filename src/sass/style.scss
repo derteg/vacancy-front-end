@@ -13,6 +13,7 @@ $brown2: #493628;
 @import "promo_02";
 @import "promo_03";
 
-.b-promo_wrap{
-	background-color: $brown1;
+.b-promo_wrap{ 
+	background: $brown1 url('../pic/pic_05.jpg') center top no-repeat;
+	overflow: hidden;
 }

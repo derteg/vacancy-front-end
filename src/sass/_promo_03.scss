@@ -3,10 +3,7 @@
 	left: -62px;
 	width: 60%;
 	min-width: 960px;
-	margin: 100px auto 0;
-	padding: 50px;
-	background-color: $brown2;
-	box-sizing: border-box;
+	margin: 0 auto;
 	&:before{
 		content: "";
 		position: absolute;
@@ -29,11 +26,15 @@
 }
 .b-third-promo__wrap{
 	position: relative;
-	margin-top: -100px;
 	z-index: 2;
+	background-color: $brown2;
+	padding: 50px;
+	margin-top: 318px;
+	box-sizing: border-box;
 }
 .b-third__title{
 	margin-bottom: 54px;
+	margin-top: -94px;
 	.l-title{
 		margin-bottom: 12px;
 	}
@@ -55,11 +56,19 @@
 .b-promo__test-chks{
 	padding-left: 4px;
 }
+.b-promo__test-result{
+	padding-left: 50px;
+	padding-top: 20px;
+	box-sizing: border-box;
+}
 .b-result__text{
+	margin-left: 14px;
 	.l-title{
 		font-size: 18px;
 		line-height: 24px;
 		color: $white;
+		margin-bottom: 12px;
+		font-weight: normal;
 	}
 	.l-text{
 		font-size: 15px;
@@ -77,4 +86,21 @@
 			border-bottom: 1px solid transparent;
 		}
 	}
+}
+
+.b-result__circle{
+	position: relative;
+	display: inline-block;
+	margin-bottom: 28px;
+}
+.b-result__circle-content{
+	font-size: 64px;
+	line-height: 262px;
+	font-family: $bebasBold;
+	color: $white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 252px;
+	text-align: center;
 }

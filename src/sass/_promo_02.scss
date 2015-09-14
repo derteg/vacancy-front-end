@@ -1,12 +1,8 @@
 .b-second-promo{
 	text-align: center;
-	margin-bottom: 100px;
-	.l-wrap{
-		width: 54%;
-		margin: 0px auto;
-	}
+	background: transparent url("../pic/pic_02.png") 130% 50% no-repeat;
 	.b-promo__title{
-		margin-bottom: 12px;
+		margin-bottom: 32px;
 	}
 	.l-text{
 		font-size: 18px;
@@ -24,4 +20,8 @@
 			border-bottom: 1px solid transparent;
 		}
 	}
+}
+.b-second-promo__wrap{
+	width: 54%;
+	margin: 0px auto;
 }
