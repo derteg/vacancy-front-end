@@ -11,7 +11,6 @@ img:
  description: 'Работа с изображениями'
  tasks:
   - 'concurrent:imgFirst'
-  - 'concurrent:imgSecond'
 devimg:
  description: 'Сборка для разработки и работа с изображениями'
  tasks:

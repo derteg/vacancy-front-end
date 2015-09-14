@@ -1,0 +1,27 @@
+.b-second-promo{
+	text-align: center;
+	margin-bottom: 100px;
+	.l-wrap{
+		width: 54%;
+		margin: 0px auto;
+	}
+	.b-promo__title{
+		margin-bottom: 12px;
+	}
+	.l-text{
+		font-size: 18px;
+		line-height: 44px;
+		color: $white;
+	}
+	.l-lnk{
+		color: $yellow;
+		text-decoration: none;
+	}
+	.l-lnk-text{
+		border-bottom: 1px solid $yellow;	
+		@include transition(border .25s);
+		&:hover{
+			border-bottom: 1px solid transparent;
+		}
+	}
+}

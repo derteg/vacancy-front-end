@@ -1,1 +1,18 @@
 $white: #fff;
+$bronze: #715314;
+$yellow: #f4b50f;
+$brown1: #3c2c20;
+$brown2: #493628;
+
+@import "normalize";
+@import "fonts";
+@import "gui";
+@import "mixin";
+@import "checkbox";
+@import "promo_01";
+@import "promo_02";
+@import "promo_03";
+
+.b-promo_wrap{
+	background-color: $brown1;
+}

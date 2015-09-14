@@ -1,0 +1,34 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+}
+h1,h2{
+	font-family: $bebasBold; 
+	color: $white;
+	margin: 0; 
+}
+.b-promo__title{
+	font-size: 96px;
+	line-height: 60px;
+	letter-spacing: 5px;
+	word-spacing: 4px;
+}
+
+.i-cols{
+	font-size: 0;
+	line-height: 0;
+}
+.i-col{
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+.i-col--50{
+	width: 50%;
+}
+.i-col--25{
+	width: 25%;
+}

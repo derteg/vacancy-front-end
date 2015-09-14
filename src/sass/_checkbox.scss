@@ -1,0 +1,40 @@
+.l-chk-cust__inp {
+    display:none;
+}
+.l-chk-cust__inp{
+    + .l-chk-cust__label{
+        display: block;
+        .l-ico {
+                display: inline-block;
+                width:28px;
+                height:28px;
+                vertical-align:middle;
+                background-color: $brown1;
+                cursor:pointer;
+                position: relative;
+            }
+    }
+}
+.l-chk-cust__inp:checked {
+    + .l-chk-cust__label {
+        .l-ico{
+        	&:before{
+                content: "";
+                position: absolute;
+                background: transparent url('../ico/ico_02.png') left top no-repeat;
+                top: 5px;
+                left: 4px;
+                width: 28px;
+                height: 28px;
+            }
+        }
+    }
+}
+.l-chk-cust__label {
+    .l-text{
+        width: 90%;
+        display: inline-block;   
+        margin-left: 14px;
+        vertical-align: middle;
+    }
+}
