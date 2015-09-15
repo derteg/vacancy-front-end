@@ -4,6 +4,45 @@ $yellow: #f4b50f;
 $brown1: #3c2c20;
 $brown2: #493628;
 
+
+.b-promo_wrap{ 
+	overflow: hidden;
+	position: relative;
+	&:before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -50%;
+		width: 200%;
+		z-index: 8;
+		height: 78%;
+		border-radius: 0px 0px 74% 74%/0px 0px 30% 30%;
+		display: inline-block;
+		background-image: -ms-radial-gradient(center top, ellipse farthest-corner, #3B2B20 20%, #2A2019 100%);
+		background-image: -moz-radial-gradient(center top, ellipse farthest-corner, #3B2B20 20%, #2A2019 100%);
+		background-image: -o-radial-gradient(center top, ellipse farthest-corner, #3B2B20 20%, #2A2019 100%);
+		background-image: -webkit-gradient(radial, center top, 0, center top, 359, color-stop(20, #3B2B20), color-stop(100, #2A2019));
+		background-image: -webkit-radial-gradient(center top, ellipse farthest-corner, #3B2B20 20%, #2A2019 100%);
+		background-image: radial-gradient(ellipse farthest-corner at center top, #3B2B20 20%, #2A2019 100%);
+	}
+	&:after{
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: inline-block;
+		background: $brown1;
+	}
+}
+.b-promo-sect{
+	padding-right: 40px;
+	padding-left: 40px;
+	position: relative;
+	z-index: 10;
+}
+
 @import "normalize";
 @import "fonts";
 @import "gui";
@@ -13,7 +52,18 @@ $brown2: #493628;
 @import "promo_02";
 @import "promo_03";
 
-.b-promo_wrap{ 
-	background: $brown1 url('../pic/pic_05.jpg') center top no-repeat;
-	overflow: hidden;
+@import "media_other";
+
+@media (max-width:767px) {
+	@import "media_320/gui_320";
+	@import "media_320/checkbox_320";
+	@import "media_320/promo_01_320";
+	@import "media_320/promo_02_320";
+	@import "media_320/promo_03_320";
+}
+
+@media (max-width:1000px) and (min-width:767px) {
+	@import "media_768/promo_01_768";
+	@import "media_768/promo_02_768";
+	@import "media_768/promo_03_768";
 }

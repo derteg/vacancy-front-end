@@ -4,41 +4,42 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Front-end developer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="dist/css/style.css">
 </head>
 <body>
 	
 	<section class="wrapper b-promo_wrap">
-		<article class="b-first-promo">
+		<article class="b-promo-sect b-first-promo js-promo-sect">
 			<div class="l-pic">
 				<img src="dist/pic/pic_01.png" height="711" width="600" alt="">
 			</div>
-			<p class="l-text">Нам нужны талантливые и способные<br/> front-end разработчики для работы над сложными<br/> и&nbsp;интересными проектами</p>
+			<p class="l-text">Нам нужны талантливые и способные front-end разработчики для работы над сложными и&nbsp;интересными проектами</p>
 			<div class="b-btn__wrap">
-				<a href="#promoTest" class="l-btn">Проверить свои навыки</a>
+				<a href="#promoTest" class="l-btn js-scroll_btn">Проверить свои навыки</a>
 			</div>
 		</article>
 
-		<article class="b-second-promo">
+		<article class="b-promo-sect b-second-promo js-promo-sect">
 			<div class="b-second-promo__wrap">
 				<h1 class="b-promo__title l-title">Мы предлагаем</h1>
-				<p class="l-text">Работа в воронежском офисе компании <a class="l-lnk" href="http://code-craft.ru/" target="_blank"><span class="l-lnk-text">Code Craft</span></a> над проектами <a class="l-lnk" href="http://nikoland.ru/" target="_blank"><span class="l-lnk-text">Студии Nikoland</span></a><br/>
-				Чистая зарплата размером с ваши возможности.<br/>
-				Гибкий график работы, возможность совмещения с учебой в ВУЗе.<br/>
-				Работа над интересными и сложными проектами в команде опытных профессионалов.<br/>
-				Классный офис в двух минутах ходьбы от главного корпуса ВГУ.<br/>
-				Чай, кофе, сникерсы на кухне.</p>
+				<div class="l-text">
+					<p>Работа в воронежском офисе компании <a class="l-lnk" href="http://code-craft.ru/" target="_blank"><span class="l-lnk-text">Code Craft</span></a> над проектами <a class="l-lnk" href="http://nikoland.ru/" target="_blank"><span class="l-lnk-text">Студии Nikoland</span></a></p>
+					<p>Чистая зарплата размером с ваши возможности.</p>
+					<p>Гибкий график работы, возможность совмещения с учебой в ВУЗе.</p>
+					<p>Работа над интересными и сложными проектами в команде опытных профессионалов.</p>
+					<p>Классный офис в двух минутах ходьбы от главного корпуса ВГУ.</p>
+					<p>Чай, кофе, сникерсы на кухне.</p>
+				</div>
 			</div>
 		</article>
 
-		<article class="b-third-promo">
+		<article class="b-promo-sect b-third-promo js-promo-sect" id="promoTest">
 			<div class="b-third-promo__wrap">
 				<hgroup class="b-third__title">
 					<h2 class="b-promo__title l-title">проверь свои навыки</h2>
 					<h5 class='l-sub-title'>Отметь навыки, которыми обладаешь, и посмотри на сколько велики твои шансы</h5>
 				</hgroup>
-				
-				<div class="b-third__triangl"></div>
 				
 				<div class="b-promo__test i-cols">
 					<div class="b-promo__test-col b-promo__test-chks i-col i-col--50 js-promo-test">
@@ -46,21 +47,21 @@
 							<input id="chk01" type="checkbox" class="l-chk-cust__inp">
 							<label for="chk01" class="l-chk-cust__label" data-test-proc="20">
 								<span class="l-ico"></span>
-								<span class="l-text">Отличное владение HTML/CSS</span>
+								<span class="l-text">Отлично владеешь HTML/CSS</span>
 							</label>
 						</div>
 						<div class="b-promo__test-row">
 							<input id="chk02" type="checkbox" class="l-chk-cust__inp">
 							<label for="chk02" class="l-chk-cust__label" data-test-proc="10">
 								<span class="l-ico"></span>
-								<span class="l-text">Наличие базовых знаний JavaScript и опыт работы с jQuery</span>
+								<span class="l-text">Имеешь базовые знания JavaScript и опыт работы с jQuery</span>
 							</label>
 						</div>
 						<div class="b-promo__test-row">
 							<input id="chk03" type="checkbox" class="l-chk-cust__inp">
 							<label for="chk03" class="l-chk-cust__label" data-test-proc="10">
 								<span class="l-ico"></span>
-								<span class="l-text">Применение БЭМ, соблюдение стандартов и внутренних соглашений</span>
+								<span class="l-text">Применяешь БЭМ, соблюдаешь стандарты и внутренние соглашения</span>
 							</label>
 						</div>
 						<div class="b-promo__test-row">
@@ -81,28 +82,28 @@
 							<input id="chk06" type="checkbox" class="l-chk-cust__inp">
 							<label for="chk06" class="l-chk-cust__label" data-test-proc="10">
 								<span class="l-ico"></span>
-								<span class="l-text">Хорошая ориентация в популярных API</span>
+								<span class="l-text">Хорошо ориентируешься в популярных API</span>
 							</label>
 						</div>
 						<div class="b-promo__test-row">
 							<input id="chk07" type="checkbox" class="l-chk-cust__inp">
 							<label for="chk07" class="l-chk-cust__label" data-test-proc="10">
 								<span class="l-ico"></span>
-								<span class="l-text">Умение оценивать трудозатраты и работать в команде</span>
+								<span class="l-text">Умеешь оценивать трудозатраты и работать в команде</span>
 							</label>
 						</div>
 						<div class="b-promo__test-row">
 							<input id="chk08" type="checkbox" class="l-chk-cust__inp">
 							<label for="chk08" class="l-chk-cust__label" data-test-proc="5">
 								<span class="l-ico"></span>
-								<span class="l-text">Опыт работы с системами контроля версий</span>
+								<span class="l-text">Имеешь опыт работы с системами контроля версий</span>
 							</label>
 						</div>
 						<div class="b-promo__test-row">
 							<input id="chk09" type="checkbox" class="l-chk-cust__inp">
 							<label for="chk09" class="l-chk-cust__label" data-test-proc="5">
 								<span class="l-ico"></span>
-								<span class="l-text">Применение препроцессоров / постпроцессоров</span>
+								<span class="l-text">Применяешь препроцессоры /<br/> постпроцессоры</span>
 							</label>
 						</div>
 					</div>
@@ -113,8 +114,8 @@
 							<div class="b-result__circle-content"></div>
 						</div>
 						<div class="b-result__text">
-							<h4 class="l-title">Вы нам подходите</h4>
-							<p class="l-text">Рассказ о себе, своих достижениях<br/> и&nbsp;ссылку на три лучших проекта присылайте<br/> на&nbsp;<a class="l-lnk" href="mailto:work@nikoland.ru"><span class="l-lnk-text">work@nikoland.ru</span></a> с темой Front-end</p>
+							<h4 class="l-title">Укажите, что вы умеете</h4>
+							<p class="l-text">Поставьте слева галочки рядом со своими умениями.</p>
 						</div>
 					</div>
 				</div>
@@ -122,7 +123,7 @@
 		</article>
 	</section>
 
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript">
 	if (typeof jQuery == 'undefined') {document.write(unescape("%3Cscript src='bower_components/jquery/dist/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
 	}

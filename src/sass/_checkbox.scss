@@ -1,40 +1,51 @@
-.l-chk-cust__inp {
-    display:none;
+input[type=checkbox].l-chk-cust__inp {
+	position:absolute;
+	z-index:-1000;
+	left:-1000px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height:1px;
+	width:1px; 
+	margin:-1px; 
+	padding:0; 
+	border:0;
 }
-.l-chk-cust__inp{
-    + .l-chk-cust__label{
-        display: block;
-        .l-ico {
-                display: inline-block;
-                width:28px;
-                height:28px;
-                vertical-align:middle;
-                background-color: $brown1;
-                cursor:pointer;
-                position: relative;
-            }
-    }
+input[type=checkbox].l-chk-cust__inp + .l-chk-cust__label{
+	display: block;
+	.l-ico {
+		display: inline-block;
+		width:28px;
+		height:28px;
+		vertical-align:middle;
+		background-color: $brown1;
+		cursor:pointer;
+		position: relative;
+		}
 }
-.l-chk-cust__inp:checked {
-    + .l-chk-cust__label {
-        .l-ico{
-        	&:before{
-                content: "";
-                position: absolute;
-                background: transparent url('../ico/ico_02.png') left top no-repeat;
-                top: 5px;
-                left: 4px;
-                width: 28px;
-                height: 28px;
-            }
-        }
-    }
+input[type=checkbox].l-chk-cust__inp:checked + .l-chk-cust__label {
+	.l-ico{
+		&:before{
+			content: "";
+			position: absolute;
+			background: transparent url('../ico/ico_02.png') left top no-repeat;
+			top: 5px;
+			left: 4px;
+			width: 28px;
+			height: 28px;
+		}
+	}
 }
 .l-chk-cust__label {
-    .l-text{
-        width: 90%;
-        display: inline-block;   
-        padding-left: 14px;
-        vertical-align: middle;
-    }
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	.l-text{
+		width: 80%;
+		display: inline-block;   
+		padding-left: 14px;
+		vertical-align: middle;
+	}
 }
