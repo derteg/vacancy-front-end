@@ -1,0 +1,12 @@
+.b-third-promo{
+	min-width: 780px;
+	left: 0;
+}
+.b-third-promo__wrap{
+	&:before{
+		border-width: 62px 0 0 80px;
+	}
+	&:after{
+		border-width: 0 80px 62px 0;
+	}
+}

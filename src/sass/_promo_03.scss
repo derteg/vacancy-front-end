@@ -1,6 +1,5 @@
 .b-third-promo{
 	position: relative;
-	left: 28px;
 	width: 60%;
 	max-width: 1280px;
 	min-width: 960px;
@@ -21,7 +20,7 @@
 	position: relative;
 	top: 0;
 	background-color: $brown2;
-	padding: 56px 84px;
+	padding: 56px 8%;
 	box-sizing: border-box;
 	&:after,
 	&:before{
@@ -42,7 +41,7 @@
 	&:after{
 		border-style: solid;
 		border-width: 0 100px 82px 0;
-		border-color: transparent #2F231B transparent transparent;
+		border-color: transparent #32251C transparent transparent;
 	}
 
 }

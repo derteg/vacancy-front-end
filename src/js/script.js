@@ -5,16 +5,9 @@ $(function() {
 			$knob = $(".js-dial"),
 			$resultTitle = $('.b-result__text .l-title'),
 			$resultText = $('.b-result__text .l-text'),
-			resizeId,
 			triggerVal = 0;
 
-		$(window).load(doneResizing);
-
-		$(window).resize(function() {
-			clearTimeout(resizeId);
-			resizeId = setTimeout(doneResizing, 100);
-			console.log(resizeId);
-		});
+		$(window).on('load resize', doneResizing);
 
 		$knob.knob({
 			fgColor: '#ffbe0f',
@@ -27,8 +20,13 @@ $(function() {
 			displayInput:false
 		});
 		 
-		function doneResizing(){
+		function doneResizing(event){
 			var wW = window.innerWidth;
+
+			if(event.type == 'load'){
+				$knob.val(0).trigger('change');
+				$label.prev('input').prop('checked', false);
+			}
 
 			if(wW < 768){
 				$knob.trigger('configure', {
@@ -59,7 +57,7 @@ $(function() {
 				$resultText.html('Рассказ о себе, своих достижениях и ссылку на три лучших проекта присылайте на <a class="l-lnk" href="mailto:work@nikoland.ru"><span class="l-lnk-text">work@nikoland.ru</span></a>.');
 			} else if(75 < triggerVal && triggerVal <= 100){
 				$resultTitle.html('У вас отличные шансы');
-				$resultText.html('Рассказ о себе, своих достижениях<br/> и&nbsp;ссылку на три лучших проекта присылайте<br/> на&nbsp;<a class="l-lnk" href="mailto:work@nikoland.ru"><span class="l-lnk-text">work@nikoland.ru</span></a> с темой Front-end');
+				$resultText.html('Скорее пишите нам на <a class="l-lnk" href="mailto:work@nikoland.ru"><span class="l-lnk-text">work@nikoland.ru</span></a> о себе,своих работах и достижениях');
 			}
 		}
 
@@ -165,38 +163,35 @@ $(function($){
 				if(sec01Pic.offset().top >= 0){
 					sec01Pic.css({
 						'opacity': 1
-					});
+					}).addClass('tada animated');
 				}
 				if(posW + sec01TextPos - 10 >= sec01TextPos){
-					sec01Text.css({
-						'opacity': 1,
-						'-webkit-transform': 'translateY(0px)',
-						'transform': 'translateY(0px)'
-					});
+					sec01Text
+						.css({
+							'opacity': 1,
+							'-webkit-animation-duration': '1s',
+						  	'animation-duration':'1s'					
+						}).addClass('bounceInDown animated');
 				}
 				if(posW + sec01BtnPos - 10 >= sec01BtnPos){
-					sec01Btn.css({
-						'opacity': 1,
-						'-webkit-transform': 'translateY(0px)',
-						'transform': 'translateY(0px)'
-					});
+					sec01Btn
+						.css({
+							'opacity': 1,
+							'-webkit-animation-duration': '1s',
+							'animation-duration':'1s',
+							'-webkit-animation-delay': '.2s',
+							'animation-delay':'.2s'
+						}).addClass('bounceInUp animated');
 				}
 
 
 
 				if(posW + sec02TitlePos/2 >= sec02TitlePos){
-					sec02Title.css({
-						'opacity': 1,
-						'-webkit-transform': 'translateY(0px)',
-						'transform': 'translateY(0px)'
-					});
+					sec02Title.css('opacity', 1).addClass('flipInX animated');
 				}
 				if(posW + sec02TextPos/2 >= sec02TextPos){
-					sec02Text.css({
-						'opacity': 1,
-						'-webkit-transform': 'translateY(0px)',
-						'transform': 'translateY(0px)'
-					});
+					sec02Text.css('opacity', 1).addClass('bounceInUp animated');
+					sec02.addClass('bg-active');
 				}
 			}
 

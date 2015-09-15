@@ -1,23 +1,20 @@
 .b-second-promo{
 	text-align: center;
 	background: transparent url("../pic/pic_02.png") no-repeat;
+	background-position: 200% 50%;
 	@include transition(background-position .4s);
 	margin-bottom: 220px;
 	.b-promo__title{
 		margin-bottom: 32px;
 		opacity: 0;
-		-webkit-transform: translateY(-100px);
-		transform: translateY(-100px);
-		@include transition(opacity 1s, transform 1s);
+		@include transition(opacity 1s);
 	}
 	.l-text{
 		font-size: 18px;
 		line-height: 44px;
 		color: $white;
 		opacity: 0;
-		-webkit-transform: translateY(100px);
-		transform: translateY(100px);
-		@include transition(opacity 1s, transform 1s);
+		@include transition(opacity 1s);
 	}
 	.l-lnk{
 		color: $yellow;
