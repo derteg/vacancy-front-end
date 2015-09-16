@@ -164,26 +164,26 @@ $(function($){
 					sec01Pic.css({
 						'opacity': 1
 					}).addClass('tada animated');
-				}
-				if(posW + sec01TextPos - 10 >= sec01TextPos){
-					sec01Text
-						.css({
-							'opacity': 1,
-							'-webkit-animation-duration': '1s',
-						  	'animation-duration':'1s'					
-						}).addClass('bounceInDown animated');
-				}
-				if(posW + sec01BtnPos - 10 >= sec01BtnPos){
-					sec01Btn
-						.css({
-							'opacity': 1,
-							'-webkit-animation-duration': '1s',
-							'animation-duration':'1s',
-							'-webkit-animation-delay': '.2s',
-							'animation-delay':'.2s'
-						})
-						.addClass('bounceInUp animated')
-						.parent().next().css('opacity', 1);
+
+					setTimeout(function(){
+						sec01Text
+							.css({
+								'opacity': 1,
+								'-webkit-animation-duration': '1s',
+							  	'animation-duration':'1s'					
+							}).addClass('bounceInDown animated');
+
+						sec01Btn
+							.css({
+								'opacity': 1,
+								'-webkit-animation-duration': '1s',
+								'animation-duration':'1s',
+								'-webkit-animation-delay': '.2s',
+								'animation-delay':'.2s'
+							})
+							.addClass('bounceInUp animated')
+							.parent().next().css('opacity', 1);
+						}, 1000);
 				}
 
 
