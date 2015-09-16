@@ -1,6 +1,9 @@
 .b-second-promo{
 	background: none;
 	margin-bottom: 38px;
+	&:before{
+		margin-bottom: 15px;
+	}
 	.b-promo__title{
 		margin-bottom: 16px;
 	}
