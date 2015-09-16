@@ -51,13 +51,13 @@ $(function() {
 				$resultText.html('Поставьте слева галочки рядом со своими умениями.');
 			} else if(10 < triggerVal && triggerVal <= 50){
 				$resultTitle.html('Ваши шансы малы');
-				$resultText.html('Но вы можете выслать нам рассказ о себе на <a class="l-lnk" href="mailto:work@nikoland.ru"><span class="l-lnk-text">work@nikoland.ru</span></a>. Возможно мы возьмем вас на вырост.');
+				$resultText.html('Но вы можете выслать нам рассказ о себе на <a class="b-lnk b-lnk_yellow" href="mailto:work@nikoland.ru"><span class="l-text">work@nikoland.ru</span></a>. Возможно мы возьмем вас на вырост.');
 			} else if(50 < triggerVal && triggerVal <= 75){
 				$resultTitle.html('Вы нам подходите');
-				$resultText.html('Рассказ о себе, своих достижениях и ссылку на три лучших проекта присылайте на <a class="l-lnk" href="mailto:work@nikoland.ru"><span class="l-lnk-text">work@nikoland.ru</span></a>.');
+				$resultText.html('Рассказ о себе, своих достижениях и ссылку на три лучших проекта присылайте на <a class="b-lnk b-lnk_yellow" href="mailto:work@nikoland.ru"><span class="l-text">work@nikoland.ru</span></a>.');
 			} else if(75 < triggerVal && triggerVal <= 100){
 				$resultTitle.html('У вас отличные шансы');
-				$resultText.html('Скорее пишите нам на <a class="l-lnk" href="mailto:work@nikoland.ru"><span class="l-lnk-text">work@nikoland.ru</span></a> о себе,своих работах и достижениях');
+				$resultText.html('Скорее пишите нам на <a class="b-lnk b-lnk_yellow" href="mailto:work@nikoland.ru"><span class="l-text">work@nikoland.ru</span></a> о себе, своих работах и достижениях');
 			}
 		}
 

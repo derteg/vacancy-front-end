@@ -11,12 +11,13 @@
     height: 78%;
     border-radius: 0px 0px 74% 74%/0px 0px 30% 30%;
     display: inline-block;
-    background-image: -ms-radial-gradient(center top, ellipse farthest-corner, #3B2B20 20%, #2A2019 100%);
-    background-image: -moz-radial-gradient(center top, ellipse farthest-corner, #3B2B20 20%, #2A2019 100%);
-    background-image: -o-radial-gradient(center top, ellipse farthest-corner, #3B2B20 20%, #2A2019 100%);
-    background-image: -webkit-gradient(radial, center top, 0, center top, 359, color-stop(20, #3B2B20), color-stop(100, #2A2019));
-    background-image: -webkit-radial-gradient(center top, ellipse farthest-corner, #3B2B20 20%, #2A2019 100%);
-    background-image: radial-gradient(ellipse farthest-corner at center top, #3B2B20 20%, #2A2019 100%); }
+    background: #2A2019;
+    background-image: -ms-radial-gradient(center top, ellipse farthest-corner, #4C3525 20%, #2A2019 100%);
+    background-image: -moz-radial-gradient(center top, ellipse farthest-corner, #4C3525 20%, #2A2019 100%);
+    background-image: -o-radial-gradient(center top, ellipse farthest-corner, #4C3525 20%, #2A2019 100%);
+    background-image: -webkit-gradient(radial, center top, 0, center top, 359, color-stop(20, #4C3525), color-stop(100, #2A2019));
+    background-image: -webkit-radial-gradient(center top, ellipse farthest-corner, #4C3525 20%, #2A2019 100%);
+    background-image: radial-gradient(ellipse farthest-corner at center top, #4C3525 20%, #2A2019 100%); }
   .b-promo_wrap:after {
     content: "";
     position: absolute;
@@ -426,6 +427,21 @@ h1, h2 {
 .i-col--25 {
   width: 25%; }
 
+.b-lnk {
+  text-decoration: none; }
+  .b-lnk .l-lnk-text {
+    -webkit-transition: border 0.4s;
+    -moz-transition: border 0.4s;
+    -o-transition: border 0.4s;
+    transition: border 0.4s; }
+  .b-lnk.b-lnk_yellow {
+    color: #f4b50f; }
+    .b-lnk.b-lnk_yellow .l-lnk-text {
+      border-bottom: 1px solid rgba(244, 181, 15, 0.5); }
+      .b-lnk.b-lnk_yellow .l-lnk-text:hover,
+      .b-lnk.b-lnk_yellow .l-lnk-text:focus {
+        border-bottom: 1px solid #f4b50f; }
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -807,17 +823,6 @@ input[type=checkbox].l-chk-cust__inp:checked + .l-chk-cust__label .l-ico:before 
     -moz-transition: opacity 1s;
     -o-transition: opacity 1s;
     transition: opacity 1s; }
-  .b-second-promo .l-lnk {
-    color: #f4b50f;
-    text-decoration: none; }
-  .b-second-promo .l-lnk-text {
-    border-bottom: 1px solid #f4b50f;
-    -webkit-transition: border 0.25s;
-    -moz-transition: border 0.25s;
-    -o-transition: border 0.25s;
-    transition: border 0.25s; }
-    .b-second-promo .l-lnk-text:hover {
-      border-bottom: 1px solid transparent; }
 
 .b-third-promo {
   position: relative;
@@ -898,17 +903,6 @@ input[type=checkbox].l-chk-cust__inp:checked + .l-chk-cust__label .l-ico:before 
     font-size: 15px;
     line-height: 24px;
     color: #c1b8af; }
-  .b-result__text .l-lnk {
-    color: #f4b50f;
-    text-decoration: none; }
-  .b-result__text .l-lnk-text {
-    border-bottom: 1px solid #f4b50f;
-    -webkit-transition: border 0.25s;
-    -moz-transition: border 0.25s;
-    -o-transition: border 0.25s;
-    transition: border 0.25s; }
-    .b-result__text .l-lnk-text:hover {
-      border-bottom: 1px solid transparent; }
 
 .b-result__circle {
   position: relative;
@@ -975,12 +969,12 @@ input[type=checkbox].l-chk-cust__inp:checked + .l-chk-cust__label .l-ico:before 
     background: none;
     margin-bottom: 38px; }
     .b-second-promo .b-promo__title {
-      margin-bottom: 14px; }
+      margin-bottom: 16px; }
     .b-second-promo .l-text {
       font-size: 16px;
-      line-height: 22px; }
+      line-height: 24px; }
       .b-second-promo .l-text p {
-        margin-bottom: 8px; }
+        margin-bottom: 14px; }
   .b-third-promo {
     left: auto;
     padding: 0;
@@ -1002,10 +996,12 @@ input[type=checkbox].l-chk-cust__inp:checked + .l-chk-cust__label .l-ico:before 
     .b-third-promo__wrap:after {
       border-style: solid;
       border-width: 0 50px 50px 0;
-      border-color: transparent #2F231B transparent transparent; }
+      border-color: transparent #35271D transparent transparent; }
   .b-third__title {
     padding: 0px 20px;
-    margin-bottom: 24px; }
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 10; }
     .b-third__title .l-sub-title {
       font-size: 15px;
       line-height: 22px; }

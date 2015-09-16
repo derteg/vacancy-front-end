@@ -22,12 +22,14 @@
 	&:after{
 		border-style: solid;
 		border-width: 0 50px 50px 0;
-		border-color: transparent #2F231B transparent transparent;
+		border-color: transparent #35271D transparent transparent;
 	}
 }
 .b-third__title{
 	padding: 0px 20px;
 	margin-bottom: 24px;
+	position: relative;
+	z-index: 10;
 	.l-sub-title{
 		font-size: 15px;
 		line-height: 22px;

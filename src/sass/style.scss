@@ -18,12 +18,13 @@ $brown2: #493628;
 		height: 78%;
 		border-radius: 0px 0px 74% 74%/0px 0px 30% 30%;
 		display: inline-block;
-		background-image: -ms-radial-gradient(center top, ellipse farthest-corner, #3B2B20 20%, #2A2019 100%);
-		background-image: -moz-radial-gradient(center top, ellipse farthest-corner, #3B2B20 20%, #2A2019 100%);
-		background-image: -o-radial-gradient(center top, ellipse farthest-corner, #3B2B20 20%, #2A2019 100%);
-		background-image: -webkit-gradient(radial, center top, 0, center top, 359, color-stop(20, #3B2B20), color-stop(100, #2A2019));
-		background-image: -webkit-radial-gradient(center top, ellipse farthest-corner, #3B2B20 20%, #2A2019 100%);
-		background-image: radial-gradient(ellipse farthest-corner at center top, #3B2B20 20%, #2A2019 100%);
+		background: #2A2019;
+		background-image: -ms-radial-gradient(center top, ellipse farthest-corner, #4C3525 20%, #2A2019 100%);
+		background-image: -moz-radial-gradient(center top, ellipse farthest-corner, #4C3525 20%, #2A2019 100%);
+		background-image: -o-radial-gradient(center top, ellipse farthest-corner, #4C3525 20%, #2A2019 100%);
+		background-image: -webkit-gradient(radial, center top, 0, center top, 359, color-stop(20, #4C3525), color-stop(100, #2A2019));
+		background-image: -webkit-radial-gradient(center top, ellipse farthest-corner, #4C3525 20%, #2A2019 100%);
+		background-image: radial-gradient(ellipse farthest-corner at center top, #4C3525 20%, #2A2019 100%);
 	}
 	&:after{
 		content: "";
@@ -45,8 +46,8 @@ $brown2: #493628;
 
 @import "normalize";
 @import "fonts";
-@import "gui";
 @import "mixin";
+@import "gui";
 @import "animation";
 @import "checkbox";
 @import "promo_01";

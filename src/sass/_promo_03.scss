@@ -87,17 +87,6 @@
 		line-height: 24px;		
 		color: #c1b8af;
 	}
-	.l-lnk{
-		color: $yellow;
-		text-decoration: none;
-	}
-	.l-lnk-text{
-		border-bottom: 1px solid $yellow;	
-		@include transition(border .25s);
-		&:hover{
-			border-bottom: 1px solid transparent;
-		}
-	}
 }
 
 .b-result__circle{

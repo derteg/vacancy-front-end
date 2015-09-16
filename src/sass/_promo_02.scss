@@ -16,15 +16,4 @@
 		opacity: 0;
 		@include transition(opacity 1s);
 	}
-	.l-lnk{
-		color: $yellow;
-		text-decoration: none;
-	}
-	.l-lnk-text{
-		border-bottom: 1px solid $yellow;	
-		@include transition(border .25s);
-		&:hover{
-			border-bottom: 1px solid transparent;
-		}
-	}
 }

@@ -33,5 +33,19 @@ h1,h2{
 	width: 25%;
 }
 
-
-
+.b-lnk{
+	text-decoration: none;
+	.l-lnk-text{
+		@include transition(border .4s);
+	}
+	&.b-lnk_yellow{
+		color: $yellow;
+		.l-lnk-text{
+			border-bottom: 1px solid rgba(244, 181, 15, 0.5);
+			&:hover,
+			&:focus{
+				border-bottom: 1px solid rgba(244, 181, 15, 1);
+			}
+		}
+	}
+}
