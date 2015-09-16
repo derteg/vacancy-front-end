@@ -181,7 +181,9 @@ $(function($){
 							'animation-duration':'1s',
 							'-webkit-animation-delay': '.2s',
 							'animation-delay':'.2s'
-						}).addClass('bounceInUp animated');
+						})
+						.addClass('bounceInUp animated')
+						.parent().next().css('opacity', 1);
 				}
 
 

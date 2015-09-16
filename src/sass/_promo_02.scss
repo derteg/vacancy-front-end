@@ -1,9 +1,22 @@
 .b-second-promo{
 	text-align: center;
-	background: transparent url("../pic/pic_02.png") no-repeat;
+	background-image: url(../pic/pic_02.png) no-repeat;
 	background-position: 200% 50%;
 	@include transition(background-position .4s);
-	margin-bottom: 220px;
+	margin-bottom: 220px;	
+	position: relative;
+	&:before{
+		content: "";
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		background: transparent url(../ico/ico_01.png) center top no-repeat;
+		width: 104px;
+		height: 24px;
+		display: inline-block;
+		margin-left: -52px;
+		margin-bottom: 60px;
+	}
 	.b-promo__title{
 		margin-bottom: 32px;
 		opacity: 0;

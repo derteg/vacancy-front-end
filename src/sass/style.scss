@@ -12,30 +12,40 @@ $brown2: #493628;
 		content: "";
 		position: absolute;
 		top: 0;
-		left: -50%;
-		width: 200%;
-		z-index: 8;
-		height: 78%;
-		border-radius: 0px 0px 74% 74%/0px 0px 30% 30%;
-		display: inline-block;
-		background: #2A2019;
-		background-image: -ms-radial-gradient(center top, ellipse farthest-corner, #4C3525 20%, #2A2019 100%);
-		background-image: -moz-radial-gradient(center top, ellipse farthest-corner, #4C3525 20%, #2A2019 100%);
-		background-image: -o-radial-gradient(center top, ellipse farthest-corner, #4C3525 20%, #2A2019 100%);
-		background-image: -webkit-gradient(radial, center top, 0, center top, 359, color-stop(20, #4C3525), color-stop(100, #2A2019));
-		background-image: -webkit-radial-gradient(center top, ellipse farthest-corner, #4C3525 20%, #2A2019 100%);
-		background-image: radial-gradient(ellipse farthest-corner at center top, #4C3525 20%, #2A2019 100%);
-	}
-	&:after{
-		content: "";
-		position: absolute;
-		bottom: 0;
 		left: 0;
-		width: 100%;
+		display: block;
 		height: 100%;
-		display: inline-block;
-		background: $brown1;
+		width: 100%;
+		background: transparent url("../pic/pic_05.jpg") 50% top no-repeat;
 	}
+	// &:before{
+	// 	content: "";
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: -50%;
+	// 	width: 200%;
+	// 	z-index: 8;
+	// 	height: 78%;
+	// 	border-radius: 0px 0px 74% 74%/0px 0px 30% 30%;
+	// 	display: inline-block;
+	// 	background: #2A2019;
+	// 	background-image: -ms-radial-gradient(center top, ellipse farthest-corner, #4C3525 20%, #2A2019 100%);
+	// 	background-image: -moz-radial-gradient(center top, ellipse farthest-corner, #4C3525 20%, #2A2019 100%);
+	// 	background-image: -o-radial-gradient(center top, ellipse farthest-corner, #4C3525 20%, #2A2019 100%);
+	// 	background-image: -webkit-gradient(radial, center top, 0, center top, 359, color-stop(20, #4C3525), color-stop(100, #2A2019));
+	// 	background-image: -webkit-radial-gradient(center top, ellipse farthest-corner, #4C3525 20%, #2A2019 100%);
+	// 	background-image: radial-gradient(ellipse farthest-corner at center top, #4C3525 20%, #2A2019 100%);
+	// }
+	// &:after{
+	// 	content: "";
+	// 	position: absolute;
+	// 	bottom: 0;
+	// 	left: 0;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	display: inline-block;
+	// 	background: $brown1;
+	// }
 }
 .b-promo-sect{
 	padding-right: 40px;
