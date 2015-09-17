@@ -2,19 +2,19 @@
 	text-align: center;
 	padding-top: 50px;
 	margin-bottom: 210px;
-	.l-shadow{
-		position: absolute;
-		top: 100%;
-		left: 50%;
-		background: transparent url('../pic/shadow.png') left top no-repeat;
-		width: 224px;
-		height: 47px;
-		margin-left: -112px; 
-		margin-top: -24px;
-		display: inline-block;
-		opacity: 0;
-		@include transition(opacity .8s .5s);
-	}
+	// .l-shadow{
+	// 	position: absolute;
+	// 	top: 100%;
+	// 	left: 50%;
+	// 	background: transparent url('../pic/shadow.png') left top no-repeat;
+	// 	width: 224px;
+	// 	height: 47px;
+	// 	margin-left: -112px; 
+	// 	margin-top: -24px;
+	// 	display: inline-block;
+	// 	opacity: 0;
+	// 	@include transition(opacity .8s .5s);
+	// }
 	.l-pic{
 		position: relative;
 		z-index: 10;
@@ -28,7 +28,6 @@
 	}
 	.l-text{
 		display: inline-block;
-		margin-top: -26px;
 		margin-bottom: 42px;
 		width: 40%;
 		color: $white; 
